@@ -1,8 +1,10 @@
 @import './../../global-styles.scss';
-@import './../Navbar/Navbar.module.scss';
 
 .Main {
-    height: calc(100% - $navbar-small-height);
+    height: calc(100% - 80px);
     display: grid;
     background-color: $secondary-green;
+    @include lg {
+        height: calc(100% - 120px);
+    }
 }
