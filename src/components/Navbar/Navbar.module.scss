@@ -1,8 +1,8 @@
 @import './../../global-styles.scss';
 
 .Navbar {
-    background-color: $primary-green;
-    height: 80px;
+    background-color: $color-bg;
+    height: 60px;
     display: flex;
     align-items: center;
 
@@ -11,17 +11,17 @@
         display: flex;
 
         img {
-            height: 50px;
+            height: 36px;
             width: auto;
         }
     }
 
     @include lg {
-        height: 120px;
+        height: 100px;
         .Logo {
             margin-left: 30px;
             img {
-                height: 64px;
+                height: 46px;
             }
         }
     }

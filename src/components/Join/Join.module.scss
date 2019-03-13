@@ -1,0 +1,54 @@
+@import './../../global-styles.scss';
+
+.Join {
+    width: 90%;
+    height: 70%;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background-color: $color-bg;
+        font-size: 2em;
+        letter-spacing: 3px;
+        border-radius: 8px;
+        border: 1px solid $primary-green;
+        box-shadow: 6px 6px 0px $primary-green;
+        opacity: 0.8;
+    }
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    .newTalkButton {
+        height: 90px;
+        width: 80%;
+    }
+    .joinTalkButton {
+        height: 70px;
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include md {
+        width: 60%;
+    }
+    @include md {
+        width: 50%;
+    }
+    @include lg {
+        width: 40%;
+    }
+    @include xl {
+        width: 30%;
+    }
+}

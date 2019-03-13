@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './Join.module.scss'
 
 class Join extends Component {
     state = {
@@ -6,12 +7,12 @@ class Join extends Component {
     }
   render() {
     return (
-      <div className="Join">
-          <button>new talk</button>
+      <div className={styles.Join}>
+          <button className={styles.newTalkButton} >NEW TALK</button>
         <form >
             <label htmlFor="code"></label>
-            <input type="text" id="code" maxLength="4"/>
-            <button>join</button>
+            <input className={styles.inputField} type="text" id="code" maxLength="4"/>
+            <button className={styles.joinTalkButton}>JOIN</button>
         </form>
       </div>
     )
