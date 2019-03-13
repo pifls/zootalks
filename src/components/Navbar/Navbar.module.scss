@@ -1,8 +1,11 @@
 @import './../../global-styles.scss';
 
+$navbar-small-height: 80px;
+$navbar-big-height: 120px;
+
 .Navbar {
     background-color: $primary-green;
-    height: 80px;
+    height: $navbar-small-height;
     display: flex;
     align-items: center;
 
@@ -17,9 +20,9 @@
     }
 
     @include lg {
-        height: 100px;
+        height: $navbar-big-height;
         .Logo {
-            margin-left: 24px;
+            margin-left: 30px;
             img {
                 height: 64px;
             }
