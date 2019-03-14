@@ -11,7 +11,7 @@ class Join extends Component {
           <button className={styles.newTalkButton} >NEW TALK</button>
         <form >
             <label htmlFor="code"></label>
-            <input className={styles.inputField} type="text" id="code" maxLength="4"/>
+            <input className={styles.inputField} type="text" id="code" maxLength="4" autocomplete="off"/>
             <button className={styles.joinTalkButton}>JOIN</button>
         </form>
       </div>
